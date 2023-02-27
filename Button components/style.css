@@ -1,0 +1,116 @@
+.default{
+
+    width: 60px;
+    height: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.418);
+    background-color: rgb(227, 215, 215);
+    border-radius: 3px;
+    margin: 5px;
+}
+
+.default:hover{
+    box-shadow: 0px 0px 4px 4px rgba(156, 156, 156, 0.3);
+}
+
+.primary{
+    width: 60px;
+    height: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.418);
+    color: white;
+    background-color: rgb(83, 118, 194);
+    border-radius: 3px;
+    margin: 5px;
+}
+
+.primary:hover{
+    /* box-shadow: 0px 0px 4px 4px rgba(23, 46, 175, 0.313); */
+    box-shadow: inset 0 0 20px rgba(4, 15, 75, 0.766);
+}
+
+.accent{
+    width: 60px;
+    height: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.418);
+    color: white;
+    background-color: rgba(122, 197, 197, 0.487);
+    border-radius: 3px;
+    margin: 5px;
+}
+.accent:hover{
+    box-shadow: inset 0px 0px 50px  rgba(122, 197, 197, 0.899);
+
+}
+
+.danger{
+    width: 60px;
+    height: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.418);
+    color: white;
+    background-color: rgb(247, 95, 95);
+    border-radius: 3px;
+    margin: 5px;
+}
+
+.danger:hover{
+    box-shadow: 0px 0px 3px 3px rgba(189, 22, 22, 0.487);
+}
+
+.large{
+
+    width: 120px;
+    height: 70px;
+    border: 1px solid rgba(0, 0, 0, 0.418);
+    color: white;
+    background-color: rgb(189, 187, 161);
+    border-radius: 8px;
+    margin: 5px;
+}
+
+.large:hover{
+    box-shadow: inset 0px 0px 50px rgb(215, 209, 138);
+
+}
+
+.small{
+
+    width: 50px;
+    height: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.418);
+    color: white;
+    background-color: rgb(230, 195, 219);
+    border-radius: 3px;
+    margin: 5px;
+}
+
+.small:hover{
+    box-shadow:inset 0px 0px 20px rgba(216, 37, 177, 0.872);
+
+}
+
+.pill{
+    width: 60px;
+    height: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.418);
+    color: white;
+    background-color: rgb(255, 204, 35);
+    border-radius: 35px;
+    margin: 5px;
+}
+
+.pill:hover{
+    box-shadow: 0px 0px 5px 5px rgba(248, 173, 11, 0.3);
+}
+
+.custom{
+    width: 60px;
+    height: 30px;
+   color: white;
+    background-color: rgba(39, 13, 189, 0.569);
+    border-radius: 5px;
+    margin: 5px;
+
+}
+
+.custom:hover{
+    box-shadow: inset 0 0 30px rgba(4, 15, 75, 0.766);
+}
