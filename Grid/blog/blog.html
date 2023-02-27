@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Blog</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .grid-container{
+        display: grid;
+        grid-template-columns: 1fr 150px;
+        grid-template-rows: auto auto 1fr auto;
+        grid-template-areas: 
+        "title title"
+        "menu sidebar"
+        "content sidebar"
+        "footer footer"
+        ;
+        height: 100vh;
+    }
+    .item1{
+        grid-area: title;
+        background-color: #069;
+        text-align: center;
+        color: white ;
+    }
+    .item2{
+        grid-area: menu;
+        background-color: #069;
+        border-top: 1px solid black;
+        color: white;
+        display: flex;
+        justify-content: space-evenly;
+        
+    }
+    a{color: inherit;}
+    .item3{
+        grid-area: content;
+    }
+    .item4{
+        grid-area: sidebar;
+        background-color: #024;
+        color: white;
+        padding: 5px;
+    }
+    .item5{
+        grid-area: footer;
+        background-color: #069;
+        text-align: center;
+        color: white;
+    }
+   
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="item1">
+            <h1>Title</h1>
+        </div>
+        <div class="item2">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Blog</a>
+        </div>
+        <div class="item3">
+            <h1>Header</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda ducimus quibusdam dolor ipsam repellat! Ipsa accusantium vel voluptas eligendi maiores obcaecati voluptatem provident reiciendis doloribus? Sed blanditiis deserunt atque delectus?</p>
+        </div>
+        <div class="item4">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, quos ab tempora magnam eligendi explicabo assumenda laboriosam, aliquid ipsum minus dolorum totam enim nisi, molestiae dicta architecto non t eligendi maiores obcaecati voluptatem provident reiciendis doloribus? Sed blanditiis deserunt atque!</p>
+        </div>
+        <div class="item5">
+            <p>Closing notes</p>
+        </div>
+    </div>
+</body>
+</html>

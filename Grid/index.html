@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Grid</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .grid-container div{
+            background-color: #46bec78a;
+            border: 1px solid red;
+            
+        }
+        .grid-container{
+            display: grid;
+            /* grid-template-columns: 100px 100px; */
+            /* grid-template-columns: repeat(3,200px); */
+            grid-template-columns: 1fr 1fr 1fr;
+            /* grid-template-columns: 100px 1fr 2fr; */
+            grid-template-rows: 40px 80px;
+            grid-auto-rows: 100px 200px;
+            /* grid-template-areas: 
+            "menu menu"
+            "content content"
+            "content content"
+            "content content"
+            "footer footer"
+            ; */
+            grid-template-areas: 
+            "menu menu menu"
+            "sidebar content content"
+            "sidebar content content"
+            "footer footer footer"
+            ;
+        }
+        .item1{
+            grid-area: menu;
+            background-color: khaki !important;
+        }
+        .item2{
+            grid-area: sidebar;
+            background-color: rgb(190, 140, 240) !important;
+        }
+        .item3{
+            grid-area: content;
+            background-color: rgb(94, 125, 55) !important;
+        }
+        .item4{
+            grid-area: footer;
+            background-color: rgb(215, 146, 42) !important;
+        }
+
+
+        /* .item5{
+            grid-area: menu;
+        }
+        .item1{
+            grid-area: content;
+        }
+        .item4{
+            grid-area: footer;
+        } */
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+        <div class="item6">6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+    </div>
+</body>
+</html>
